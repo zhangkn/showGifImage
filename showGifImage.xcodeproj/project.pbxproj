@@ -14,6 +14,8 @@
 		04931639254A567400A04863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04931638254A567400A04863 /* Assets.xcassets */; };
 		0493163C254A567400A04863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0493163A254A567400A04863 /* LaunchScreen.storyboard */; };
 		0493163F254A567400A04863 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493163E254A567400A04863 /* main.m */; };
+		0493164A254A5B6400A04863 /* KNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04931649254A5B6400A04863 /* KNViewController.m */; };
+		0493164F254A5B9900A04863 /* UIImageView+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493164E254A5B9900A04863 /* UIImageView+Gif.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		0493163B254A567400A04863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0493163D254A567400A04863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0493163E254A567400A04863 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04931648254A5B6400A04863 /* KNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNViewController.h; sourceTree = "<group>"; };
+		04931649254A5B6400A04863 /* KNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNViewController.m; sourceTree = "<group>"; };
+		0493164D254A5B9900A04863 /* UIImageView+Gif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Gif.h"; sourceTree = "<group>"; };
+		0493164E254A5B9900A04863 /* UIImageView+Gif.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Gif.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,8 @@
 		0493162B254A566B00A04863 /* showGifImage */ = {
 			isa = PBXGroup;
 			children = (
+				04931647254A58BB00A04863 /* VC */,
+				04931646254A58B000A04863 /* core */,
 				0493162C254A566B00A04863 /* AppDelegate.h */,
 				0493162D254A566B00A04863 /* AppDelegate.m */,
 				0493162F254A566B00A04863 /* SceneDelegate.h */,
@@ -74,6 +82,24 @@
 				0493163E254A567400A04863 /* main.m */,
 			);
 			path = showGifImage;
+			sourceTree = "<group>";
+		};
+		04931646254A58B000A04863 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				0493164D254A5B9900A04863 /* UIImageView+Gif.h */,
+				0493164E254A5B9900A04863 /* UIImageView+Gif.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		04931647254A58BB00A04863 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				04931648254A5B6400A04863 /* KNViewController.h */,
+				04931649254A5B6400A04863 /* KNViewController.m */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +128,7 @@
 		04931621254A566B00A04863 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KN;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					04931628254A566B00A04863 = {
@@ -146,9 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04931634254A566B00A04863 /* ViewController.m in Sources */,
+				0493164F254A5B9900A04863 /* UIImageView+Gif.m in Sources */,
 				0493162E254A566B00A04863 /* AppDelegate.m in Sources */,
 				0493163F254A567400A04863 /* main.m in Sources */,
 				04931631254A566B00A04863 /* SceneDelegate.m in Sources */,
+				0493164A254A5B6400A04863 /* KNViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
