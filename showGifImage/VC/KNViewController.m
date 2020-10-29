@@ -21,8 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    self.title = @"showGifImage";
+    // Do any additional setup after loading the view.
+    self.title = @"https://kunnan.blog.csdn.net/";
+
     //网络gif图片URL
     NSMutableArray * urlArray = [NSMutableArray arrayWithArray:@[@"https://upload-images.jianshu.io/upload_images/1208426-679b4ee4e796d064.gif?imageMogr2/auto-orient/strip", @"https://profile.csdnimg.cn/D/9/E/3_u011018979",@"http://img3.duitang.com/uploads/item/201505/20/20150520150637_aEiMU.gif"]];
     
