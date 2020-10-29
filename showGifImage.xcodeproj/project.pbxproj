@@ -16,6 +16,8 @@
 		0493163F254A567400A04863 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493163E254A567400A04863 /* main.m */; };
 		0493164A254A5B6400A04863 /* KNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04931649254A5B6400A04863 /* KNViewController.m */; };
 		0493164F254A5B9900A04863 /* UIImageView+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493164E254A5B9900A04863 /* UIImageView+Gif.m */; };
+		04931655254A5D6100A04863 /* KNPictureBrowseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04931654254A5D6100A04863 /* KNPictureBrowseView.m */; };
+		0493165B254A5DEA00A04863 /* KNPhotoZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493165A254A5DEA00A04863 /* KNPhotoZoom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		04931649254A5B6400A04863 /* KNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNViewController.m; sourceTree = "<group>"; };
 		0493164D254A5B9900A04863 /* UIImageView+Gif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Gif.h"; sourceTree = "<group>"; };
 		0493164E254A5B9900A04863 /* UIImageView+Gif.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Gif.m"; sourceTree = "<group>"; };
+		04931653254A5D6100A04863 /* KNPictureBrowseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNPictureBrowseView.h; sourceTree = "<group>"; };
+		04931654254A5D6100A04863 /* KNPictureBrowseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNPictureBrowseView.m; sourceTree = "<group>"; };
+		04931659254A5DEA00A04863 /* KNPhotoZoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNPhotoZoom.h; sourceTree = "<group>"; };
+		0493165A254A5DEA00A04863 /* KNPhotoZoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNPhotoZoom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +102,30 @@
 		04931647254A58BB00A04863 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				04931652254A5D4300A04863 /* View */,
 				04931648254A5B6400A04863 /* KNViewController.h */,
 				04931649254A5B6400A04863 /* KNViewController.m */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		04931652254A5D4300A04863 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04931658254A5DD500A04863 /* PhotoZoom */,
+				04931653254A5D6100A04863 /* KNPictureBrowseView.h */,
+				04931654254A5D6100A04863 /* KNPictureBrowseView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04931658254A5DD500A04863 /* PhotoZoom */ = {
+			isa = PBXGroup;
+			children = (
+				04931659254A5DEA00A04863 /* KNPhotoZoom.h */,
+				0493165A254A5DEA00A04863 /* KNPhotoZoom.m */,
+			);
+			path = PhotoZoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,10 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0493165B254A5DEA00A04863 /* KNPhotoZoom.m in Sources */,
 				04931634254A566B00A04863 /* ViewController.m in Sources */,
 				0493164F254A5B9900A04863 /* UIImageView+Gif.m in Sources */,
 				0493162E254A566B00A04863 /* AppDelegate.m in Sources */,
 				0493163F254A567400A04863 /* main.m in Sources */,
+				04931655254A5D6100A04863 /* KNPictureBrowseView.m in Sources */,
 				04931631254A566B00A04863 /* SceneDelegate.m in Sources */,
 				0493164A254A5B6400A04863 /* KNViewController.m in Sources */,
 			);
